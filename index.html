@@ -364,6 +364,28 @@
             font-family: monospace;
             border-left: 3px solid var(--primary);
         }
+		
+		.sticky-icons {
+			position: fixed;
+			top: 24px;
+			right: 32px;
+			z-index: 100;
+			display: flex;
+			gap: 20px;
+		}
+
+		.sticky-icons a img {
+			width: 34px;
+			height: 34px;
+			filter: drop-shadow(0 1px 8px #1a1a1a80);
+			opacity: 0.8;
+			transition: opacity 0.2s, transform 0.2s;
+		}
+		.sticky-icons a img:hover {
+			opacity: 1;
+			transform: scale(1.13);
+		}
+
         
         /* Footer */
         footer {
@@ -424,6 +446,14 @@
             How to install?
             <span class="arrow">↓</span>
         </a>
+		<div class="sticky-icons">
+		  <a href="https://discord.com/invite/Pdmfmqk" target="_blank" aria-label="Discord">
+			<img src="images/discord.png" alt="Discord" />
+		  </a>
+		  <a href="https://github.com/SeanR-ScanR/TypeR" target="_blank" aria-label="GitHub">
+			<img src="images/github.png" alt="GitHub" />
+		  </a>
+		</div>
     </header>
     
     <section id="features" class="features">
