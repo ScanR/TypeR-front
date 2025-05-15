@@ -427,276 +427,244 @@
             }
         }
     </style>
+  <script src="i18n.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="hero">
-                <div class="hero-content">
-                    <h1 class="fade-in">TypeR</h1>
-                    <p class="fade-in stagger-delay-1">The ultimate Photoshop extension for manga and comics typesetters, designed to simplify your workflow and improve your productivity.</p>
-                    <div class="cta-container fade-in stagger-delay-2">
-                        <a href="https://github.com/SeanR-ScanR/TypeR/releases/latest/download/TypeR.zip" class="cta cta-primary">Download</a>
-                        <a href="#features" class="cta cta-secondary">Discover Features</a>
-                    </div>
-                </div>
-            </div>
+  <header>
+    <div class="container">
+      <div class="hero">
+        <div class="hero-content">
+          <h1 class="fade-in" data-i18n="hero.title"></h1>
+          <p class="fade-in stagger-delay-1" data-i18n="hero.subtitle"></p>
+          <div class="cta-container fade-in stagger-delay-2">
+            <a href="https://github.com/SeanR-ScanR/TypeR/releases/latest/download/TypeR.zip"
+               class="cta cta-primary"
+               data-i18n="hero.ctaDownload"></a>
+            <a href="#features"
+               class="cta cta-secondary"
+               data-i18n="hero.ctaFeatures"></a>
+          </div>
         </div>
-        <a href="#download" class="installation-link fade-in stagger-delay-3">
-            How to install?
-            <span class="arrow">↓</span>
-        </a>
-		<div class="sticky-icons">
-		  <a href="https://discord.com/invite/Pdmfmqk" target="_blank" aria-label="Discord">
-			<img src="images/discord.png" alt="Discord" />
-		  </a>
-		  <a href="https://github.com/SeanR-ScanR/TypeR" target="_blank" aria-label="GitHub">
-			<img src="images/github.png" alt="GitHub" />
-		  </a>
-		</div>
-    </header>
-    
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Key Features</h2>
-                <p>TypeR enhances the original TyperTools extension with bug fixes and essential new features.</p>
-            </div>
-            
-            <div class="feature-grid">
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🔄</div>
-                    <h3>Bug Fixes</h3>
-                    <p>Multiple bugs from the original TyperTools have been fixed for a more stable and reliable experience.</p>
-                </div>
-                
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🖋️</div>
-                    <h3>Improved Text Smoothing</h3>
-                    <p>Fixed the bug that changed text smoothing from "Strong" to "Smooth" when increasing text size.</p>
-                </div>
-                
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">↔️</div>
-                    <h3>Stable Auto-Centering</h3>
-                    <p>Text shape no longer changes when using auto-centering.</p>
-                </div>
-                
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">⌨️</div>
-                    <h3>Customizable Shortcuts</h3>
-                    <p>Modify keyboard shortcuts to suit your preferences and enjoy the new shortcuts that have been added.</p>
-                </div>
-                
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">🔍</div>
-                    <h3>Automatic Page Detection</h3>
-                    <p>Automatically detects pages when importing for a smoother process.</p>
-                </div>
-                
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">📄</div>
-                    <h3>Automatic Page Switching</h3>
-                    <p>Automatically switches pages for a seamless workflow.</p>
-                </div>
-                
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">📏</div>
-                    <h3>Resize TypeR</h3>
-                    <p>Decreased size limit of the TypeR window for a smaller footprint.</p>
-                </div>
-                
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">↕️</div>
-                    <h3>Line Spacing Sync</h3>
-                    <p>Line spacing automatically adjusts when increasing/decreasing text size.</p>
-                </div>
-                
-                <div class="feature-card fade-in">
-                    <div class="feature-icon">📐</div>
-                    <h3>Adaptive Size</h3>
-                    <p>If no fixed text size is defined, the size of the selected layer will be used.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="workflow">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Optimize Your Workflow</h2>
-                <p>TypeR has been designed to make your typesetting process faster and more efficient.</p>
-            </div>
-            
-            <div class="workflow-content">
-			
-                <div class="workflow-item fade-in">
-                    <div class="workflow-text">
-                        <h3>No need to copy-paste anymore</h3>
-                        <p>You can easily typeset your page without switching back and forth in Google Docs.<br><br><i><strong>Tip:</strong> Use keyboard shortcut for even faster typeset</i></p>
-                    </div>
-                    <div class="workflow-image">
-                        <img src="images/easy.gif" alt="Style management">
-                    </div>
-                </div>
-                <div class="workflow-item fade-in">
-                    <div class="workflow-text">
-                        <h3>Simplified Style Management</h3>
-                        <p>The style manager lets you save all your fonts along with their settings, and organize them into folders for improved workflow.</p>
-                    </div>
-                    <div class="workflow-image">
-                        <img src="images/style.gif" alt="Style management">
-                    </div>
-                </div>
-                <div class="workflow-item fade-in">
-                    <div class="workflow-text">
-                        <h3>Semi-auto text centering</h3>
-                        <p>Centering a text is not longer a problem, select the zone of your bubble, and click on align.<br><br><i><strong>Pro tip:</strong> Use keyboard shortcuts!</i></p>
-                    </div>
-                    <div class="workflow-image">
-                        <img src="images/center.gif" alt="Style management">
-                    </div>
-                </div>
-                <div class="workflow-item fade-in">
-                    <div class="workflow-text">
-                        <h3>Seamless Page Navigation</h3>
-                        <p>With automatic page detection and automatic page switching, you can work without interruption on multi-page projects. TypeR handles the transitions so you can focus on typesetting.</p>
-                    </div>
-                    <div class="workflow-image">
-                        <img src="images/1.jpg" alt="Workflow between pages">
-                    </div>
-                </div>
-                
-                <div class="workflow-item fade-in">
-                    <div class="workflow-text">
-                        <h3>Each series has their own fonts</h3>
-                        <p>Create, duplicate, and export style folders individuall taht you can share to your team. No need to export all parameters and font styles anymore — you can just import/export series by series.</p>
-                    </div>
-                    <div class="workflow-image">
-                        <img src="images/2.gif" alt="Style management">
-                    </div>
-                </div>
-                
-                <div class="workflow-item fade-in">
-                    <div class="workflow-text">
-                        <h3>Compact & Efficient Interface</h3>
-                        <p>With the ability to reduce the size of the TypeR window, you can organize your workspace optimally while keeping all tools within reach.</p>
-                    </div>
-                    <div class="workflow-image">
-                        <img src="images/3.gif" alt="TypeR interface">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-	<section id="download" class="installation">
-		<div class="container">
-			<div class="section-title fade-in">
-				<h2>Quick Installation</h2>
-				<p>Get started with TypeR in one minute.</p>
-			</div>
-			
-			<div class="installation-steps fade-in">
-				<div class="step">
-					<div class="step-number">1</div>
-					<div class="step-content">
-						<h4>Extract & Install</h4>
-						<p>
-							Extract the archive and execute the installation script for your operating system.
-						</p>
-						<p>For <b>macOS,</b> open the terminal, go the <b>TypeR</b> folder and write:</p>
-						<div class="code-block">
-							chmod +x install_mac.sh<br>
-							./install_mac.sh
-						</div>
-						<br>
-						<p>For <b>Windows</b> execute:</p>
-						<div class="code-block">
-							install_win.cmd
-						</div>
-					</div>
-				</div>
-				<div class="step">
-					<div class="step-number">2</div>
-					<div class="step-content">
-						<h4>Finish Setup in Photoshop</h4>
-						<p>
-							That's it! Now go to <b>Window &gt; Extensions &gt; TypeR</b> in Photoshop.
-						</p>
-					</div>
-				</div>
-				<div class="step note">
-					<div class="step-content">
-						<strong>Note for macOS ARM (M1/M2):</strong>
-						<br>
-						You might have to right-click on your Photoshop <code>.app</code>, choose <b>Get Info</b>, and check <b>Open with Rosetta</b>.
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+      </div>
+    </div>
+    <a href="#download"
+       class="installation-link fade-in stagger-delay-3"
+       data-i18n="installation.link">
+      <span class="arrow">↓</span>
+    </a>
+    <div class="sticky-icons">
+      <a href="https://discord.com/invite/Pdmfmqk" target="_blank" aria-label="Discord">
+        <img src="images/discord.png" alt="Discord" />
+      </a>
+      <a href="https://github.com/SeanR-ScanR/TypeR" target="_blank" aria-label="GitHub">
+        <img src="images/github.png" alt="GitHub" />
+      </a>
+    </div>
+  </header>
 
-    
-    <footer>
-        <div class="container">
-            <p>TypeR - An advanced Photoshop extension for manga and comics typesetters</p>
-			<p><a href="https://swirt.github.io/typertools/">Original TyperTools</a> by Swirt</p>
-            <p><br>If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request on <a href="https://github.com/SeanR-ScanR/TypeR" target="_blank">GitHub</a>.</p>
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 data-i18n="features.title"></h2>
+        <p data-i18n="features.description"></p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🔄</div>
+          <h3 data-i18n="features.bugFixes.title"></h3>
+          <p data-i18n="features.bugFixes.desc"></p>
         </div>
-    </footer>
-    
-    <script>
-        // Intersection Observer for fade-in animations
-        document.addEventListener('DOMContentLoaded', function() {
-            const fadeElements = document.querySelectorAll('.fade-in');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-            
-            fadeElements.forEach(element => {
-                observer.observe(element);
-            });
-            
-            // Activate header elements immediately
-            setTimeout(() => {
-                document.querySelector('header .fade-in').classList.add('active');
-                setTimeout(() => {
-                    document.querySelector('header .stagger-delay-1').classList.add('active');
-                    setTimeout(() => {
-                        document.querySelector('header .stagger-delay-2').classList.add('active');
-                        setTimeout(() => {
-                            document.querySelector('header .stagger-delay-3').classList.add('active');
-                        }, 200);
-                    }, 200);
-                }, 200);
-            }, 300);
-            
-            // Smooth scroll functionality
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🖋️</div>
+          <h3 data-i18n="features.textSmoothing.title"></h3>
+          <p data-i18n="features.textSmoothing.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">↔️</div>
+          <h3 data-i18n="features.autoCentering.title"></h3>
+          <p data-i18n="features.autoCentering.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">⌨️</div>
+          <h3 data-i18n="features.shortcuts.title"></h3>
+          <p data-i18n="features.shortcuts.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🔍</div>
+          <h3 data-i18n="features.pageDetection.title"></h3>
+          <p data-i18n="features.pageDetection.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">📄</div>
+          <h3 data-i18n="features.pageSwitching.title"></h3>
+          <p data-i18n="features.pageSwitching.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">📏</div>
+          <h3 data-i18n="features.resize.title"></h3>
+          <p data-i18n="features.resize.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">↕️</div>
+          <h3 data-i18n="features.lineSpacing.title"></h3>
+          <p data-i18n="features.lineSpacing.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">📐</div>
+          <h3 data-i18n="features.adaptiveSize.title"></h3>
+          <p data-i18n="features.adaptiveSize.desc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="workflow">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 data-i18n="workflow.title"></h2>
+        <p data-i18n="workflow.description"></p>
+      </div>
+      <div class="workflow-content">
+        <div class="workflow-item fade-in">
+          <div class="workflow-text">
+            <h3 data-i18n="workflow.item1.title"></h3>
+            <p data-i18n="workflow.item1.desc"></p>
+          </div>
+          <div class="workflow-image">
+            <img src="images/easy.gif" alt="Style management" />
+          </div>
+        </div>
+        <div class="workflow-item fade-in">
+          <div class="workflow-text">
+            <h3 data-i18n="workflow.item2.title"></h3>
+            <p data-i18n="workflow.item2.desc"></p>
+          </div>
+          <div class="workflow-image">
+            <img src="images/style.gif" alt="Style management" />
+          </div>
+        </div>
+        <div class="workflow-item fade-in">
+          <div class="workflow-text">
+            <h3 data-i18n="workflow.item3.title"></h3>
+            <p data-i18n="workflow.item3.desc"></p>
+          </div>
+          <div class="workflow-image">
+            <img src="images/center.gif" alt="Style management" />
+          </div>
+        </div>
+        <div class="workflow-item fade-in">
+          <div class="workflow-text">
+            <h3 data-i18n="workflow.item4.title"></h3>
+            <p data-i18n="workflow.item4.desc"></p>
+          </div>
+          <div class="workflow-image">
+            <img src="images/1.jpg" alt="Workflow between pages" />
+          </div>
+        </div>
+        <div class="workflow-item fade-in">
+          <div class="workflow-text">
+            <h3 data-i18n="workflow.item5.title"></h3>
+            <p data-i18n="workflow.item5.desc"></p>
+          </div>
+          <div class="workflow-image">
+            <img src="images/2.gif" alt="Style management" />
+          </div>
+        </div>
+        <div class="workflow-item fade-in">
+          <div class="workflow-text">
+            <h3 data-i18n="workflow.item6.title"></h3>
+            <p data-i18n="workflow.item6.desc"></p>
+          </div>
+          <div class="workflow-image">
+            <img src="images/3.gif" alt="TypeR interface" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="installation">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 data-i18n="installation.title"></h2>
+        <p data-i18n="installation.subtitle"></p>
+      </div>
+      <div class="installation-steps fade-in">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h4 data-i18n="installation.step1.title"></h4>
+            <p data-i18n="installation.step1.desc"></p>
+            <p data-i18n="installation.step1.macInstructions"></p>
+            <div class="code-block">
+              chmod +x install_mac.sh<br>
+              ./install_mac.sh
+            </div>
+            <p data-i18n="installation.step1.winInstructions"></p>
+            <div class="code-block">
+              install_win.cmd
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h4 data-i18n="installation.step2.title"></h4>
+            <p data-i18n="installation.step2.desc"></p>
+          </div>
+        </div>
+        <div class="step note">
+          <div class="step-content">
+            <strong data-i18n="installation.note.title"></strong><br>
+            <span data-i18n="installation.note.desc"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p data-i18n="footer.text1"></p>
+      <p data-i18n="footer.original"></p>
+      <p data-i18n="footer.issues"></p>
+    </div>
+  </footer>
+
+  <script>
+    // Intersection Observer pour les animations fade-in
+    document.addEventListener('DOMContentLoaded', function() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
         });
-    </script>
+      }, { threshold: 0.1 });
+      fadeElements.forEach(el => observer.observe(el));
+      setTimeout(() => {
+        document.querySelector('header .fade-in').classList.add('active');
+        setTimeout(() => {
+          document.querySelector('header .stagger-delay-1').classList.add('active');
+          setTimeout(() => {
+            document.querySelector('header .stagger-delay-2').classList.add('active');
+            setTimeout(() => {
+              document.querySelector('header .stagger-delay-3').classList.add('active');
+            }, 200);
+          }, 200);
+        }, 200);
+      }, 300);
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) window.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
+        });
+      });
+    });
+  </script>
 </body>
 </html>

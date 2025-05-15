@@ -1,0 +1,308 @@
+{
+  "en": {
+    "hero": {
+      "title": "TypeR",
+      "subtitle": "The ultimate Photoshop extension for manga and comics typesetters, designed to simplify your workflow and improve your productivity.",
+      "ctaDownload": "Download",
+      "ctaFeatures": "Discover Features"
+    },
+    "installation": {
+      "link": "How to install?",
+      "title": "Quick Installation",
+      "subtitle": "Get started with TypeR in one minute.",
+      "step1": {
+        "title": "Extract & Install",
+        "desc": "Extract the archive and execute the installation script for your operating system.",
+        "macInstructions": "For macOS, open the terminal, go to the TypeR folder and write:",
+        "macCommand": "chmod +x install_mac.sh\n./install_mac.sh",
+        "winInstructions": "For Windows execute:",
+        "winCommand": "install_win.cmd"
+      },
+      "step2": {
+        "title": "Finish Setup in Photoshop",
+        "desc": "That's it! Now go to Window > Extensions > TypeR in Photoshop."
+      },
+      "note": {
+        "title": "Note for macOS ARM (M1/M2):",
+        "desc": "You might have to right-click on your Photoshop <code>.app</code>, choose <b>Get Info</b>, and check <b>Open with Rosetta</b>."
+      }
+    },
+    "features": {
+      "title": "Key Features",
+      "description": "TypeR enhances the original TyperTools extension with bug fixes and essential new features.",
+      "bugFixes": {
+        "title": "Bug Fixes",
+        "desc": "Multiple bugs from the original TyperTools have been fixed for a more stable and reliable experience."
+      },
+      "textSmoothing": {
+        "title": "Improved Text Smoothing",
+        "desc": "Fixed the bug that changed text smoothing from \"Strong\" to \"Smooth\" when increasing text size."
+      },
+      "autoCentering": {
+        "title": "Stable Auto-Centering",
+        "desc": "Text shape no longer changes when using auto-centering."
+      },
+      "shortcuts": {
+        "title": "Customizable Shortcuts",
+        "desc": "Modify keyboard shortcuts to suit your preferences and enjoy the new shortcuts that have been added."
+      },
+      "pageDetection": {
+        "title": "Automatic Page Detection",
+        "desc": "Automatically detects pages when importing for a smoother process."
+      },
+      "pageSwitching": {
+        "title": "Automatic Page Switching",
+        "desc": "Automatically switches pages for a seamless workflow."
+      },
+      "resize": {
+        "title": "Resize TypeR",
+        "desc": "Decreased size limit of the TypeR window for a smaller footprint."
+      },
+      "lineSpacing": {
+        "title": "Line Spacing Sync",
+        "desc": "Line spacing automatically adjusts when increasing/decreasing text size."
+      },
+      "adaptiveSize": {
+        "title": "Adaptive Size",
+        "desc": "If no fixed text size is defined, the size of the selected layer will be used."
+      }
+    },
+    "workflow": {
+      "title": "Optimize Your Workflow",
+      "description": "TypeR has been designed to make your typesetting process faster and more efficient.",
+      "item1": {
+        "title": "No need to copy-paste anymore",
+        "desc": "You can easily typeset your page without switching back and forth in Google Docs.<br><br><i><strong>Tip:</strong> Use keyboard shortcut for even faster typeset</i>"
+      },
+      "item2": {
+        "title": "Simplified Style Management",
+        "desc": "The style manager lets you save all your fonts along with their settings, and organize them into folders for improved workflow."
+      },
+      "item3": {
+        "title": "Semi-auto text centering",
+        "desc": "Centering a text is no longer a problem, select the zone of your bubble, and click on align.<br><br><i><strong>Pro tip:</strong> Use keyboard shortcuts!</i>"
+      },
+      "item4": {
+        "title": "Seamless Page Navigation",
+        "desc": "With automatic page detection and automatic page switching, you can work without interruption on multi-page projects. TypeR handles the transitions so you can focus on typesetting."
+      },
+      "item5": {
+        "title": "Each series has their own fonts",
+        "desc": "Create, duplicate, and export style folders individually that you can share to your team. No need to export all parameters and font styles anymore — you can just import/export series by series."
+      },
+      "item6": {
+        "title": "Compact & Efficient Interface",
+        "desc": "With the ability to reduce the size of the TypeR window, you can organize your workspace optimally while keeping all tools within reach."
+      }
+    },
+    "footer": {
+      "text1": "TypeR - An advanced Photoshop extension for manga and comics typesetters",
+      "original": "<a href=\"https://swirt.github.io/typertools/\">Original TyperTools</a> by Swirt",
+      "issues": "If you encounter any issues or have suggestions for improvements, feel free to <a href=\"https://github.com/SeanR-ScanR/TypeR\" target=\"_blank\">open an issue</a> or submit a pull request on GitHub."
+    }
+  },
+  "fr": {
+    "hero": {
+      "title": "TypeR",
+      "subtitle": "L'extension Photoshop ultime pour les lettreurs de mangas et de comics, conçue pour simplifier votre vie et augmenter votre productivité.",
+      "ctaDownload": "Télécharger",
+      "ctaFeatures": "Découvrir les fonctionnalités"
+    },
+    "installation": {
+      "link": "Comment installer ?",
+      "title": "Installation rapide",
+      "subtitle": "Commencez avec TypeR en une minute.",
+      "step1": {
+        "title": "Extraire et installer",
+        "desc": "Extrayez l'archive et exécutez le script d'installation pour votre système d'exploitation.",
+        "macInstructions": "Pour macOS, ouvrez le terminal, allez dans le dossier TypeR et tapez :",
+        "macCommand": "chmod +x install_mac.sh\n./install_mac.sh",
+        "winInstructions": "Pour Windows, exécutez :",
+        "winCommand": "install_win.cmd"
+      },
+      "step2": {
+        "title": "Terminer la configuration dans Photoshop",
+        "desc": "C'est tout ! Allez maintenant dans Fenêtre > Extensions > TypeR dans Photoshop."
+      },
+      "note": {
+        "title": "Note pour macOS ARM (M1/M2) :",
+        "desc": "Vous devrez peut-être faire un clic droit sur votre application Photoshop <code>(.app)</code>, sélectionner <strong>Obtenir des informations</strong> et cocher <strong>Ouvrir avec Rosetta</strong>."
+      }
+    },
+    "features": {
+      "title": "Fonctionnalités clés",
+      "description": "TypeR améliore l'extension TyperTools originale avec des corrections de bugs et des fonctionnalités essentielles.",
+      "bugFixes": {
+        "title": "Corrections de bugs",
+        "desc": "Plusieurs bugs de TyperTools original ont été corrigés pour une expérience plus stable et fiable."
+      },
+      "textSmoothing": {
+        "title": "Amélioration du lissage du texte",
+        "desc": "Correction du bug qui remplaçait le lissage du texte de « Forte » à « Lisse » lors de l'augmentation de la taille du texte."
+      },
+      "autoCentering": {
+        "title": "Centrage automatique stable",
+        "desc": "La forme du texte ne change plus lors de l'utilisation du centrage automatique."
+      },
+      "shortcuts": {
+        "title": "Raccourcis personnalisables",
+        "desc": "Modifiez les raccourcis clavier selon vos préférences et profitez des nouveaux raccourcis ajoutés."
+      },
+      "pageDetection": {
+        "title": "Détection automatique des pages",
+        "desc": "Détection automatique des pages à l'importation pour un processus plus fluide."
+      },
+      "pageSwitching": {
+        "title": "Changement automatique de page",
+        "desc": "Changement automatique de page pour un flux de travail sans interruption."
+      },
+      "resize": {
+        "title": "Redimensionner TypeR",
+        "desc": "Limite de taille de la fenêtre TypeR réduite pour une empreinte plus petite."
+      },
+      "lineSpacing": {
+        "title": "Synchronisation de l'interligne",
+        "desc": "L'interligne s'ajuste automatiquement lors de l'augmentation/diminution de la taille du texte."
+      },
+      "adaptiveSize": {
+        "title": "Taille adaptative",
+        "desc": "Si aucune taille de texte fixe n'est définie, la taille de la couche sélectionnée sera utilisée."
+      }
+    },
+    "workflow": {
+      "title": "Mais en gros ça fait quoi ?",
+      "description": "TypeR a été conçu pour rendre votre processus de typeset plus rapide et plus efficace.",
+      "item1": {
+        "title": "Plus besoin de copier-coller",
+        "desc": "Vous pouvez facilement typer votre page sans passer constamment dans Google Docs.<br><br><i><strong>Conseil :</strong> utilisez un raccourci clavier pour taper encore plus vite.<i>"
+      },
+      "item2": {
+        "title": "Gestion de styles simplifiée",
+        "desc": "Le gestionnaire de styles vous permet d'enregistrer toutes vos polices avec leurs paramètres et de les organiser en dossiers pour un flux de travail optimisé."
+      },
+      "item3": {
+        "title": "Centrage de texte semi-automatique",
+        "desc": "Centrer un texte n'est plus un problème, sélectionnez la zone de votre bulle et cliquez sur aligner.<br><br><i><strong>Conseils pro :</strong> utilisez les raccourcis clavier !</i>"
+      },
+      "item4": {
+        "title": "Navigation de pages sans interruption",
+        "desc": "Avec la détection et le changement automatiques de pages, vous pouvez travailler sans interruption sur des projets multi-pages. TypeR gère les transitions pour que vous puissiez vous concentrer sur la typographie."
+      },
+      "item5": {
+        "title": "Chaque série a ses propres polices",
+        "desc": "Créez, dupliquez et exportez des dossiers de styles individuellement pour les partager avec votre équipe. Plus besoin d'exporter tous les paramètres et styles de police : vous pouvez importer/exporter série par série."
+      },
+      "item6": {
+        "title": "Interface compacte et efficace",
+        "desc": "TyperTools c'est trop gros, hein ? Eh bien avec TypeR, vous pouvez organiser votre espace de travail de manière optimale tout en gardant tous les outils à portée de main."
+      }
+    },
+    "footer": {
+      "text1": "TypeR – Une extension Photoshop avancée pour les typesetteurs de mangas et de comics",
+      "original": "<a href=\"https://swirt.github.io/typertools/\">TyperTools original</a> par Swirt",
+      "issues": "Si vous rencontrez des problèmes ou avez des suggestions d'amélioration, n'hésitez pas à <a href=\"https://github.com/SeanR-ScanR/TypeR\" target=\"_blank\">ouvrir une issue</a> ou à proposer une pull request sur GitHub."
+    }
+  },
+  "es": {
+    "hero": {
+      "title": "TypeR",
+      "subtitle": "La extensión definitiva de Photoshop para rotulistas de manga y cómics, diseñada para simplificar tu flujo de trabajo y mejorar tu productividad.",
+      "ctaDownload": "Descargar",
+      "ctaFeatures": "Descubrir características"
+    },
+    "installation": {
+      "link": "¿Cómo instalar?",
+      "title": "Instalación rápida",
+      "subtitle": "Empieza con TypeR en un minuto.",
+      "step1": {
+        "title": "Extraer e instalar",
+        "desc": "Extrae el archivo y ejecuta el script de instalación para tu sistema operativo.",
+        "macInstructions": "Para macOS, abre la terminal, ve a la carpeta TypeR y escribe:",
+        "macCommand": "chmod +x install_mac.sh\n./install_mac.sh",
+        "winInstructions": "Para Windows ejecuta:",
+        "winCommand": "install_win.cmd"
+      },
+      "step2": {
+        "title": "Terminar configuración en Photoshop",
+        "desc": "¡Eso es todo! Ahora ve a Ventana > Extensiones > TypeR en Photoshop."
+      },
+      "note": {
+        "title": "Nota para macOS ARM (M1/M2):",
+        "desc": "Puede que tengas que hacer clic derecho en tu aplicación de Photoshop (.app), elegir <strong>Obtener información</strong> y marcar <strong>Abrir con Rosetta</strong>."
+      }
+    },
+    "features": {
+      "title": "Funciones clave",
+      "description": "TypeR mejora la extensión TyperTools original con correcciones de errores y nuevas funciones esenciales.",
+      "bugFixes": {
+        "title": "Corrección de errores",
+        "desc": "Se han corregido múltiples errores de TyperTools original para una experiencia más estable y confiable."
+      },
+      "textSmoothing": {
+        "title": "Suavizado de texto mejorado",
+        "desc": "Se corrigió el error que cambiaba el suavizado de texto de \"Fuerte\" a \"Suave\" al aumentar el tamaño del texto."
+      },
+      "autoCentering": {
+        "title": "Centrado automático estable",
+        "desc": "La forma del texto ya no cambia al usar centrado automático."
+      },
+      "shortcuts": {
+        "title": "Atajos personalizables",
+        "desc": "Modifica los atajos de teclado a tu gusto y disfruta de los nuevos atajos añadidos."
+      },
+      "pageDetection": {
+        "title": "Detección automática de páginas",
+        "desc": "Detecta páginas automáticamente al importar para un proceso más fluido."
+      },
+      "pageSwitching": {
+        "title": "Cambio automático de páginas",
+        "desc": "Cambia páginas automáticamente para un flujo de trabajo sin interrupciones."
+      },
+      "resize": {
+        "title": "Redimensionar TypeR",
+        "desc": "Se redujo el límite de tamaño de la ventana de TypeR para una huella más pequeña."
+      },
+      "lineSpacing": {
+        "title": "Sincronización de espaciado de líneas",
+        "desc": "El espaciado de líneas se ajusta automáticamente al aumentar/disminuir el tamaño del texto."
+      },
+      "adaptiveSize": {
+        "title": "Tamaño adaptativo",
+        "desc": "Si no se define un tamaño de texto fijo, se usará el tamaño de la capa seleccionada."
+      }
+    },
+    "workflow": {
+      "title": "Optimiza tu flujo de trabajo",
+      "description": "TypeR ha sido diseñado para hacer que tu proceso de rotulación sea más rápido y eficiente.",
+      "item1": {
+        "title": "No es necesario copiar y pegar más",
+        "desc": "Puedes rotular tu página sin cambiar constantemente a Google Docs.<br><br><i><strong>Consejo:</strong> usa un atajo de teclado para rotular aún más rápido.</i>"
+      },
+      "item2": {
+        "title": "Gestión de estilos simplificada",
+        "desc": "El administrador de estilos te permite guardar todas tus fuentes con sus ajustes y organizarlas en carpetas para un flujo de trabajo mejorado."
+      },
+      "item3": {
+        "title": "Centrado de texto semi-automático",
+        "desc": "Centrar un texto ya no es un problema, selecciona la zona de tu bocadillo y haz clic en alinear.<br><br><i><strong>Pro tip:</strong> ¡usa atajos de teclado!</i>"
+      },
+      "item4": {
+        "title": "Navegación de páginas sin interrupciones",
+        "desc": "Con la detección y cambio automáticos de páginas, puedes trabajar sin interrupciones en proyectos de varias páginas. TypeR maneja las transiciones para que te concentres en la rotulación."
+      },
+      "item5": {
+        "title": "Cada serie tiene sus propias fuentes",
+        "desc": "Crea, duplica y exporta carpetas de estilos individualmente para compartir con tu equipo. No es necesario exportar todos los parámetros y estilos de fuente: puedes importar/exportar por serie."
+      },
+      "item6": {
+        "title": "Interfaz compacta y eficiente",
+        "desc": "Con la capacidad de reducir el tamaño de la ventana TypeR, puedes organizar tu espacio de trabajo de manera óptima mientras mantienes todas las herramientas a tu alcance."
+      }
+    },
+    "footer": {
+      "text1": "TypeR – Una extensión avanzada de Photoshop para rotulistas de manga y cómics",
+      "original": "<a href=\"https://swirt.github.io/typertools/\">TyperTools original</a> por Swirt",
+      "issues": "Si encuentras algún problema o tienes sugerencias de mejora, siéntete libre de <a href=\"https://github.com/SeanR-ScanR/TypeR\" target=\"_blank\">abrir un issue</a> o enviar un pull request en GitHub."
+    }
+  }
+}
