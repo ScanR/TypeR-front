@@ -198,6 +198,12 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .version-notice {
+            margin-top: 15px;
+            color: var(--success);
+            font-weight: 600;
+        }
         
         /* Features */
         .features {
@@ -257,6 +263,24 @@
         
         .feature-card p {
             color: #b8b8b8;
+        }
+
+        /* News */
+        .news {
+            background: var(--dark);
+        }
+
+        .news-list {
+            max-width: 800px;
+            margin: 40px auto 0;
+            color: #b8b8b8;
+            line-height: 1.6;
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .news-list li {
+            margin-bottom: 10px;
         }
         
         /* Workflow */
@@ -447,6 +471,7 @@
                class="cta cta-secondary"
                data-i18n="hero.ctaFeatures"></a>
           </div>
+          <p class="version-notice" data-i18n="hero.versionNotice"></p>
         </div>
       </div>
     </div>
@@ -518,6 +543,27 @@
           <p data-i18n="features.adaptiveSize.desc"></p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="news" class="news">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2 data-i18n="news.title"></h2>
+      </div>
+      <ul class="news-list fade-in">
+        <li data-i18n="news.li1"></li>
+        <li data-i18n="news.li2"></li>
+        <li data-i18n="news.li3"></li>
+        <li data-i18n="news.li4"></li>
+        <li data-i18n="news.li5"></li>
+        <li data-i18n="news.li6"></li>
+        <li data-i18n="news.li7"></li>
+        <li data-i18n="news.li8"></li>
+        <li data-i18n="news.li9"></li>
+        <li data-i18n="news.li10"></li>
+        <li data-i18n="news.li11"></li>
+      </ul>
     </div>
   </section>
 

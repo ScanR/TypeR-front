@@ -4,7 +4,8 @@
       "title": "TypeR",
       "subtitle": "The ultimate Photoshop extension for manga and comics typesetters, designed to simplify your workflow and improve your productivity.",
       "ctaDownload": "Download",
-      "ctaFeatures": "Discover Features"
+      "ctaFeatures": "Discover Features",
+      "versionNotice": "Version 2.0.0 now available!"
     },
     "installation": {
       "link": "How to install?",
@@ -67,6 +68,20 @@
         "desc": "If no fixed text size is defined, the size of the selected layer will be used."
       }
     },
+    "news": {
+      "title": "What's New in 2.0.0?",
+      "li1": "Various translation errors fixed.",
+      "li2": "No error inserting text with undefined size.",
+      "li3": "Styles with same prefix prioritize active folder.",
+      "li4": "Stroke support added to styles.",
+      "li5": "Auto-centering now detects bubbles automatically.",
+      "li6": "Automatic update check on startup.",
+      "li7": "Ability to duplicate a style.",
+      "li8": "You can change the interface language.",
+      "li9": "New 'Auto Close PSD' option.",
+      "li10": "Redesigned 'Open PSD Directory' explorer.",
+      "li11": "Simplified import/export and persistent PSDs."
+    },
     "workflow": {
       "title": "Optimize Your Workflow",
       "description": "TypeR has been designed to make your typesetting process faster and more efficient.",
@@ -106,7 +121,8 @@
       "title": "TypeR",
       "subtitle": "L'extension Photoshop ultime pour les lettreurs de mangas et de comics, conçue pour simplifier votre vie et augmenter votre productivité.",
       "ctaDownload": "Télécharger",
-      "ctaFeatures": "Découvrir les fonctionnalités"
+      "ctaFeatures": "Découvrir les fonctionnalités",
+      "versionNotice": "La version 2.0.0 est disponible !"
     },
     "installation": {
       "link": "Comment installer ?",
@@ -169,6 +185,20 @@
         "desc": "Si aucune taille de texte fixe n'est définie, la taille de la couche sélectionnée sera utilisée."
       }
     },
+    "news": {
+      "title": "Quoi de neuf en 2.0.0 ?",
+      "li1": "Plusieurs erreurs de traduction corrigées.",
+      "li2": "L'insertion de texte sans taille définie ne provoque plus d'erreur.",
+      "li3": "Les styles au m\u00eame pr\u00e9fixe suivent le dossier actif.",
+      "li4": "Ajout de la gestion des contours dans les styles.",
+      "li5": "L'autocentrage d\u00e9tecte automatiquement la bulle.",
+      "li6": "V\u00e9rification automatique des mises \u00e0 jour au d\u00e9marrage.",
+      "li7": "Possibilit\u00e9 de dupliquer un style.",
+      "li8": "Option pour changer la langue de l'interface.",
+      "li9": "Nouvelle option \"Fermeture auto du PSD\".",
+      "li10": "Explorateur \"Ouvrir le dossier PSD\" refondu.",
+      "li11": "Import/export simplifi\u00e9s et PSD persistants."
+    },
     "workflow": {
       "title": "Mais en gros ça fait quoi ?",
       "description": "TypeR a été conçu pour rendre votre processus de typeset plus rapide et plus efficace.",
@@ -208,7 +238,8 @@
       "title": "TypeR",
       "subtitle": "La extensión definitiva de Photoshop para rotulistas de manga y cómics, diseñada para simplificar tu flujo de trabajo y mejorar tu productividad.",
       "ctaDownload": "Descargar",
-      "ctaFeatures": "Descubrir características"
+      "ctaFeatures": "Descubrir características",
+      "versionNotice": "\u00a1La versi\u00f3n 2.0.0 ya est\u00e1 disponible!"
     },
     "installation": {
       "link": "¿Cómo instalar?",
@@ -270,6 +301,20 @@
         "title": "Tamaño adaptativo",
         "desc": "Si no se define un tamaño de texto fijo, se usará el tamaño de la capa seleccionada."
       }
+    },
+    "news": {
+      "title": "¿Qué hay de nuevo en 2.0.0?",
+      "li1": "Se corrigieron varios errores de traducción.",
+      "li2": "Insertar texto sin tamaño definido ya no produce error.",
+      "li3": "Los estilos con el mismo prefijo siguen la carpeta activa.",
+      "li4": "Soporte de contorno en los estilos.",
+      "li5": "El autocentrado detecta automáticamente la burbuja.",
+      "li6": "Comprobación automática de actualizaciones al iniciar.",
+      "li7": "Posibilidad de duplicar un estilo.",
+      "li8": "Opción para cambiar el idioma de la interfaz.",
+      "li9": "Nueva opción 'Cierre automático del PSD'.",
+      "li10": "Explorador de 'Abrir carpeta PSD' rediseñado.",
+      "li11": "Importación/exportación simplificada y PSD persistentes."
     },
     "workflow": {
       "title": "Optimiza tu flujo de trabajo",
