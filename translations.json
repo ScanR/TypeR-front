@@ -41,7 +41,7 @@
       },
       "autoCentering": {
         "title": "Stable Auto-Centering",
-        "desc": "Text shape no longer changes when using auto-centering."
+        "desc": "Automatically detects bubbles for perfect alignment."
       },
       "shortcuts": {
         "title": "Customizable Shortcuts",
@@ -66,21 +66,40 @@
       "adaptiveSize": {
         "title": "Adaptive Size",
         "desc": "If no fixed text size is defined, the size of the selected layer will be used."
-      }
-    },
-    "news": {
-      "title": "What's New in 2.0.0?",
-      "li1": "Various translation errors fixed.",
-      "li2": "No error inserting text with undefined size.",
-      "li3": "Styles with same prefix prioritize active folder.",
-      "li4": "Stroke support added to styles.",
-      "li5": "Auto-centering now detects bubbles automatically.",
-      "li6": "Automatic update check on startup.",
-      "li7": "Ability to duplicate a style.",
-      "li8": "You can change the interface language.",
-      "li9": "New 'Auto Close PSD' option.",
-      "li10": "Redesigned 'Open PSD Directory' explorer.",
-      "li11": "Simplified import/export and persistent PSDs."
+      },
+      "outline": {
+        "title": "Style Outlines",
+        "desc": "Add strokes to your styles for more flexible lettering."
+      },
+      "updateCheck": {
+        "title": "Automatic Update Check",
+        "desc": "TypeR now checks for updates on startup."
+      },
+      "duplicateStyle": {
+        "title": "Duplicate Styles",
+        "desc": "Quickly duplicate a style to speed up your workflow."
+      },
+      "languageOption": {
+        "title": "Language Selection",
+        "desc": "Choose your interface language in the settings."
+      },
+      "autoClosePSD": {
+        "title": "Auto Close PSD",
+        "desc": "Automatically closes the previous PSD when switching pages."
+      },
+      "redesignedExplorer": {
+        "title": "New PSD Explorer",
+        "desc": "Completely redesigned interface for opening PSD folders."
+      },
+      "importExport": {
+        "title": "Simplified Import/Export",
+        "desc": "Import or export folders from a single panel."
+      },
+      "persistentPSD": {
+        "title": "Persistent PSDs",
+        "desc": "Imported PSDs remain after restart with an unsync option."
+      },
+      "showMore": "Show more"
     },
     "workflow": {
       "title": "Optimize Your Workflow",
@@ -158,7 +177,7 @@
       },
       "autoCentering": {
         "title": "Centrage automatique stable",
-        "desc": "La forme du texte ne change plus lors de l'utilisation du centrage automatique."
+        "desc": "Détecte maintenant la bulle automatiquement pour un alignement parfait."
       },
       "shortcuts": {
         "title": "Raccourcis personnalisables",
@@ -183,21 +202,40 @@
       "adaptiveSize": {
         "title": "Taille adaptative",
         "desc": "Si aucune taille de texte fixe n'est définie, la taille de la couche sélectionnée sera utilisée."
-      }
-    },
-    "news": {
-      "title": "Quoi de neuf en 2.0.0 ?",
-      "li1": "Plusieurs erreurs de traduction corrigées.",
-      "li2": "L'insertion de texte sans taille définie ne provoque plus d'erreur.",
-      "li3": "Les styles au m\u00eame pr\u00e9fixe suivent le dossier actif.",
-      "li4": "Ajout de la gestion des contours dans les styles.",
-      "li5": "L'autocentrage d\u00e9tecte automatiquement la bulle.",
-      "li6": "V\u00e9rification automatique des mises \u00e0 jour au d\u00e9marrage.",
-      "li7": "Possibilit\u00e9 de dupliquer un style.",
-      "li8": "Option pour changer la langue de l'interface.",
-      "li9": "Nouvelle option \"Fermeture auto du PSD\".",
-      "li10": "Explorateur \"Ouvrir le dossier PSD\" refondu.",
-      "li11": "Import/export simplifi\u00e9s et PSD persistants."
+      },
+      "outline": {
+        "title": "Contours de style",
+        "desc": "Ajoutez des contours \u00e0 vos styles pour un lettrage plus flexible."
+      },
+      "updateCheck": {
+        "title": "V\u00e9rification des mises \u00e0 jour",
+        "desc": "TypeR recherche automatiquement les mises \u00e0 jour au d\u00e9marrage."
+      },
+      "duplicateStyle": {
+        "title": "Dupliquer un style",
+        "desc": "Dupliquez rapidement un style pour gagner du temps."
+      },
+      "languageOption": {
+        "title": "Choix de la langue",
+        "desc": "Changez la langue de l'interface dans les param\u00e8tres."
+      },
+      "autoClosePSD": {
+        "title": "Fermeture auto du PSD",
+        "desc": "Ferme automatiquement le PSD pr\u00e9c\u00e9dent lors du changement de page."
+      },
+      "redesignedExplorer": {
+        "title": "Explorateur PSD repens\u00e9",
+        "desc": "Nouvelle interface pour ouvrir le dossier PSD."
+      },
+      "importExport": {
+        "title": "Import/Export simplifi\u00e9s",
+        "desc": "Une interface unique pour choisir les dossiers \u00e0 importer ou exporter."
+      },
+      "persistentPSD": {
+        "title": "PSD persistants",
+        "desc": "Les PSD import\u00e9s restent apr\u00e8s red\u00e9marrage avec option de d\u00e9synchro."
+      },
+      "showMore": "Voir plus"
     },
     "workflow": {
       "title": "Mais en gros ça fait quoi ?",
@@ -275,7 +313,7 @@
       },
       "autoCentering": {
         "title": "Centrado automático estable",
-        "desc": "La forma del texto ya no cambia al usar centrado automático."
+        "desc": "Ahora detecta la burbuja de forma automática para un alineado perfecto."
       },
       "shortcuts": {
         "title": "Atajos personalizables",
@@ -300,21 +338,40 @@
       "adaptiveSize": {
         "title": "Tamaño adaptativo",
         "desc": "Si no se define un tamaño de texto fijo, se usará el tamaño de la capa seleccionada."
-      }
-    },
-    "news": {
-      "title": "¿Qué hay de nuevo en 2.0.0?",
-      "li1": "Se corrigieron varios errores de traducción.",
-      "li2": "Insertar texto sin tamaño definido ya no produce error.",
-      "li3": "Los estilos con el mismo prefijo siguen la carpeta activa.",
-      "li4": "Soporte de contorno en los estilos.",
-      "li5": "El autocentrado detecta automáticamente la burbuja.",
-      "li6": "Comprobación automática de actualizaciones al iniciar.",
-      "li7": "Posibilidad de duplicar un estilo.",
-      "li8": "Opción para cambiar el idioma de la interfaz.",
-      "li9": "Nueva opción 'Cierre automático del PSD'.",
-      "li10": "Explorador de 'Abrir carpeta PSD' rediseñado.",
-      "li11": "Importación/exportación simplificada y PSD persistentes."
+      },
+      "outline": {
+        "title": "Contornos de estilo",
+        "desc": "A\u00f1ade contornos a tus estilos para un rotulado m\u00e1s flexible."
+      },
+      "updateCheck": {
+        "title": "Comprobaci\u00f3n de actualizaciones",
+        "desc": "TypeR busca actualizaciones autom\u00e1ticamente al iniciar."
+      },
+      "duplicateStyle": {
+        "title": "Duplicar estilo",
+        "desc": "Duplica un estilo r\u00e1pidamente para agilizar tu trabajo."
+      },
+      "languageOption": {
+        "title": "Selecci\u00f3n de idioma",
+        "desc": "Cambia el idioma de la interfaz en la configuraci\u00f3n."
+      },
+      "autoClosePSD": {
+        "title": "Cierre autom\u00e1tico de PSD",
+        "desc": "Cierra autom\u00e1ticamente el PSD anterior al cambiar de p\u00e1gina."
+      },
+      "redesignedExplorer": {
+        "title": "Explorador PSD renovado",
+        "desc": "Interfaz renovada para abrir la carpeta PSD."
+      },
+      "importExport": {
+        "title": "Importaci\u00f3n/Exportaci\u00f3n simplificada",
+        "desc": "Una sola interfaz para elegir las carpetas a importar o exportar."
+      },
+      "persistentPSD": {
+        "title": "PSDs persistentes",
+        "desc": "Los PSD importados se mantienen tras reiniciar con opci\u00f3n de desvincular."
+      },
+      "showMore": "Ver m\u00e1s"
     },
     "workflow": {
       "title": "Optimiza tu flujo de trabajo",

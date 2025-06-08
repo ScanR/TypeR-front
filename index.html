@@ -100,17 +100,6 @@
             transform: translateY(0);
         }
         
-        .stagger-delay-1 {
-            transition-delay: 0.2s;
-        }
-        
-        .stagger-delay-2 {
-            transition-delay: 0.4s;
-        }
-        
-        .stagger-delay-3 {
-            transition-delay: 0.6s;
-        }
         
         .hero h1 {
             font-size: 4rem;
@@ -199,10 +188,16 @@
             transform: translateY(0);
         }
 
-        .version-notice {
-            margin-top: 15px;
+        .version-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 30px;
+            background: rgba(66, 184, 131, 0.15);
+            border: 1px solid var(--success);
             color: var(--success);
+            font-size: 0.9rem;
             font-weight: 600;
+            margin-bottom: 15px;
         }
         
         /* Features */
@@ -265,22 +260,26 @@
             color: #b8b8b8;
         }
 
-        /* News */
-        .news {
-            background: var(--dark);
-        }
-
-        .news-list {
-            max-width: 800px;
+        .show-more-btn {
+            display: block;
             margin: 40px auto 0;
-            color: #b8b8b8;
-            line-height: 1.6;
-            list-style: disc;
-            padding-left: 20px;
+            padding: 12px 26px;
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s, color 0.3s;
         }
 
-        .news-list li {
-            margin-bottom: 10px;
+        .show-more-btn:hover {
+            background: var(--primary);
+            color: var(--light);
+        }
+
+        .hidden-feature {
+            display: none;
         }
         
         /* Workflow */
@@ -462,8 +461,9 @@
       <div class="hero">
         <div class="hero-content">
           <h1 class="fade-in" data-i18n="hero.title"></h1>
-          <p class="fade-in stagger-delay-1" data-i18n="hero.subtitle"></p>
-          <div class="cta-container fade-in stagger-delay-2">
+          <p class="version-badge fade-in" data-i18n="hero.versionNotice"></p>
+          <p class="fade-in" data-i18n="hero.subtitle"></p>
+          <div class="cta-container fade-in">
             <a href="https://github.com/ScanR/TypeR/releases/latest/download/TypeR.zip"
                class="cta cta-primary"
                data-i18n="hero.ctaDownload"></a>
@@ -471,12 +471,11 @@
                class="cta cta-secondary"
                data-i18n="hero.ctaFeatures"></a>
           </div>
-          <p class="version-notice" data-i18n="hero.versionNotice"></p>
         </div>
       </div>
     </div>
     <a href="#download"
-       class="installation-link fade-in stagger-delay-3"
+       class="installation-link fade-in"
        data-i18n="installation.link">
       <span class="arrow">↓</span>
     </a>
@@ -496,7 +495,7 @@
         <h2 data-i18n="features.title"></h2>
         <p data-i18n="features.description"></p>
       </div>
-      <div class="feature-grid">
+      <div class="feature-grid" id="feature-grid">
         <div class="feature-card fade-in">
           <div class="feature-icon">🔄</div>
           <h3 data-i18n="features.bugFixes.title"></h3>
@@ -542,28 +541,48 @@
           <h3 data-i18n="features.adaptiveSize.title"></h3>
           <p data-i18n="features.adaptiveSize.desc"></p>
         </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🎨</div>
+          <h3 data-i18n="features.outline.title"></h3>
+          <p data-i18n="features.outline.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🔔</div>
+          <h3 data-i18n="features.updateCheck.title"></h3>
+          <p data-i18n="features.updateCheck.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">📑</div>
+          <h3 data-i18n="features.duplicateStyle.title"></h3>
+          <p data-i18n="features.duplicateStyle.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🌐</div>
+          <h3 data-i18n="features.languageOption.title"></h3>
+          <p data-i18n="features.languageOption.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">📂</div>
+          <h3 data-i18n="features.autoClosePSD.title"></h3>
+          <p data-i18n="features.autoClosePSD.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🗂️</div>
+          <h3 data-i18n="features.redesignedExplorer.title"></h3>
+          <p data-i18n="features.redesignedExplorer.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🔄</div>
+          <h3 data-i18n="features.importExport.title"></h3>
+          <p data-i18n="features.importExport.desc"></p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">💾</div>
+          <h3 data-i18n="features.persistentPSD.title"></h3>
+          <p data-i18n="features.persistentPSD.desc"></p>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section id="news" class="news">
-    <div class="container">
-      <div class="section-title fade-in">
-        <h2 data-i18n="news.title"></h2>
-      </div>
-      <ul class="news-list fade-in">
-        <li data-i18n="news.li1"></li>
-        <li data-i18n="news.li2"></li>
-        <li data-i18n="news.li3"></li>
-        <li data-i18n="news.li4"></li>
-        <li data-i18n="news.li5"></li>
-        <li data-i18n="news.li6"></li>
-        <li data-i18n="news.li7"></li>
-        <li data-i18n="news.li8"></li>
-        <li data-i18n="news.li9"></li>
-        <li data-i18n="news.li10"></li>
-        <li data-i18n="news.li11"></li>
-      </ul>
+      <button id="showMoreBtn" class="show-more-btn" data-i18n="features.showMore"></button>
     </div>
   </section>
 
@@ -694,17 +713,24 @@
       }, { threshold: 0.1 });
       fadeElements.forEach(el => observer.observe(el));
       setTimeout(() => {
-        document.querySelector('header .fade-in').classList.add('active');
-        setTimeout(() => {
-          document.querySelector('header .stagger-delay-1').classList.add('active');
-          setTimeout(() => {
-            document.querySelector('header .stagger-delay-2').classList.add('active');
-            setTimeout(() => {
-              document.querySelector('header .stagger-delay-3').classList.add('active');
-            }, 200);
-          }, 200);
-        }, 200);
+        document.querySelectorAll('header .fade-in').forEach((el, idx) => {
+          setTimeout(() => el.classList.add('active'), idx * 200);
+        });
       }, 300);
+
+      const featureCards = document.querySelectorAll('#feature-grid .feature-card');
+      const showMore = document.getElementById('showMoreBtn');
+      if (featureCards.length > 9) {
+        featureCards.forEach((card, idx) => {
+          if (idx > 8) card.classList.add('hidden-feature');
+        });
+        showMore.addEventListener('click', () => {
+          document.querySelectorAll('.hidden-feature').forEach(c => c.classList.remove('hidden-feature'));
+          showMore.style.display = 'none';
+        });
+      } else {
+        showMore.style.display = 'none';
+      }
       // Smooth scroll
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
