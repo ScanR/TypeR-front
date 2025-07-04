@@ -154,23 +154,21 @@
             box-shadow: 0 15px 25px rgba(51, 102, 255, 0.3);
         }
         
-        /* Installation link */
         .installation-link {
             position: absolute;
             bottom: 30px;
-            left: 43%;
-            transform: translateX(-50%);
-            color: #888;
-            text-decoration: none;
-            font-size: 0.9rem;
+            left: 0;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            color: #888;
+            text-decoration: none;
+            font-size: 1.25rem;
             transition: color 0.3s ease;
             cursor: pointer;
-			font-size: 1.25rem;
-			right: 43%;
         }
+    
         
         .installation-link:hover {
             color: var(--light);
@@ -453,6 +451,22 @@
                 padding: 60px 0;
             }
         }
+
+        @media (max-width: 500px) {
+          .cta-container {
+            flex-direction: column;
+            gap: 15px;          /* espacement vertical entre boutons */
+            align-items: stretch;
+          }
+
+          .cta {
+            width: 100%;        /* boutons pleine largeur */
+            padding: 12px 0;    /* moins de padding horizontal */
+            font-size: 1rem;    /* texte un peu plus petit */
+            text-align: center; /* centrage du label */
+          }
+        }
+
     </style>
   <script src="i18n.js" defer></script>
 </head>
@@ -462,7 +476,9 @@
       <div class="hero">
         <div class="hero-content">
           <h1 class="fade-in" data-i18n="hero.title"></h1>
-          <p class="version-badge fade-in" data-i18n="hero.versionNotice"></p>
+          <a href="https://github.com/ScanR/TypeR/releases" target="_blank"
+          class="version-badge fade-in"
+          data-i18n="hero.versionNotice"></a>       
           <p class="fade-in" data-i18n="hero.subtitle"></p>
           <div class="cta-container fade-in">
             <a href="https://github.com/ScanR/TypeR/releases/latest/download/TypeR.zip"
