@@ -221,17 +221,41 @@
         }
         
         .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            flex-wrap: nowrap;
             gap: 40px;
             margin-top: 50px;
+            padding: 16px 0;
+            overflow: hidden;
+            position: relative;
+            scroll-behavior: smooth;
+        }
+        .feature-grid::before,
+        .feature-grid::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 60px;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .feature-grid::before {
+            left: 0;
+            background: linear-gradient(to right, var(--dark) 0%, transparent 100%);
+        }
+        .feature-grid::after {
+            right: 0;
+            background: linear-gradient(to left, var(--dark) 0%, transparent 100%);
         }
         
         .feature-card {
+            flex: 0 0 calc((100% - 80px) / 3);
+            min-width: 260px;
             background: rgba(255, 255, 255, 0.03);
             border-radius: 10px;
             padding: 30px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.6s ease, box-shadow 0.6s ease, opacity 0.6s ease;
             border: 1px solid rgba(255, 255, 255, 0.05);
             height: 100%;
         }
@@ -240,6 +264,39 @@
             transform: translateY(-5px);
             box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
             border-color: rgba(51, 102, 255, 0.3);
+        }
+
+        .feature-card.carousel-active {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 28px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(51, 102, 255, 0.25);
+            opacity: 1;
+        }
+
+        .feature-card.carousel-muted {
+            opacity: 0.35;
+            transform: translateY(14px) scale(0.98);
+            filter: blur(0.3px);
+        }
+
+        .feature-grid.show-all {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 40px;
+            overflow: visible;
+            transform: none !important;
+        }
+
+        .feature-grid.show-all::before,
+        .feature-grid.show-all::after {
+            display: none;
+        }
+
+        .feature-grid.show-all .feature-card {
+            flex: initial;
+            min-width: initial;
+            opacity: 1;
+            transform: none;
+            filter: none;
         }
         
         .feature-icon {
@@ -436,6 +493,11 @@
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
+            }
+
+            .feature-card {
+                flex: 0 0 90%;
+                min-width: 0;
             }
             
             .workflow-item {
@@ -778,19 +840,72 @@
         });
       }, 300);
 
-      const featureCards = document.querySelectorAll('#feature-grid .feature-card');
+      const featureGrid = document.getElementById('feature-grid');
+      const featureCards = Array.from(document.querySelectorAll('#feature-grid .feature-card'));
       const showMore = document.getElementById('showMoreBtn');
-      if (featureCards.length > 9) {
+      const visibleCards = 3;
+      const intervalMs = 2200;
+      let carouselIndex = 0;
+      let showAll = false;
+      let carouselTimer = null;
+
+      const updateActiveCards = (startIdx) => {
+        const end = startIdx + visibleCards;
         featureCards.forEach((card, idx) => {
-          if (idx > 8) card.classList.add('hidden-feature');
+          const active = idx >= startIdx && idx < end;
+          card.classList.toggle('carousel-active', active);
+          card.classList.toggle('carousel-muted', !active);
         });
-        showMore.addEventListener('click', () => {
-          document.querySelectorAll('.hidden-feature').forEach(c => c.classList.remove('hidden-feature'));
+      };
+
+      const slideCarousel = () => {
+        if (showAll || featureCards.length <= visibleCards) return;
+        const maxStart = Math.max(0, featureCards.length - visibleCards);
+        carouselIndex = carouselIndex + 1;
+        if (carouselIndex > maxStart) carouselIndex = 0;
+        const startIdx = carouselIndex;
+        const firstCard = featureCards[0];
+        if (!firstCard || !featureGrid) return;
+        const cardWidth = firstCard.getBoundingClientRect().width;
+        const gridStyle = getComputedStyle(featureGrid);
+        const gap = parseFloat(gridStyle.columnGap || gridStyle.gap || 0);
+        const step = cardWidth + gap;
+        const target = step * startIdx;
+        featureGrid.scrollTo({ left: target, behavior: 'smooth' });
+        updateActiveCards(startIdx);
+      };
+
+      const startCarousel = () => {
+        if (!showMore || !featureGrid) return;
+        if (featureCards.length <= visibleCards) {
           showMore.style.display = 'none';
-        });
-      } else {
-        showMore.style.display = 'none';
+          return;
+        }
+        featureGrid.classList.remove('show-all');
+        showMore.style.display = '';
+        updateActiveCards(0);
+        carouselTimer = setInterval(slideCarousel, intervalMs);
+      };
+
+      const showAllFeatures = () => {
+        showAll = true;
+        if (carouselTimer) {
+          clearInterval(carouselTimer);
+          carouselTimer = null;
+        }
+        if (featureGrid) {
+          featureGrid.classList.add('show-all');
+          featureGrid.scrollTo({ left: 0, behavior: 'auto' });
+        }
+        featureCards.forEach(card => card.classList.remove('carousel-muted', 'carousel-active'));
+        if (showMore) showMore.style.display = 'none';
+      };
+
+      if (showMore) {
+        showMore.addEventListener('click', showAllFeatures);
       }
+
+      startCarousel();
       // Smooth scroll
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
