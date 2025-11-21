@@ -5,7 +5,7 @@
       "subtitle": "The ultimate Photoshop extension for manga and comics typesetters, designed to simplify your workflow and improve your productivity.",
       "ctaDownload": "Download",
       "ctaFeatures": "Discover Features",
-      "versionNotice": "Version 2.3.0 now available!"
+      "versionNotice": "Version 2.4.0 now available!"
     },
     "installation": {
       "link": "How to install?",
@@ -34,6 +34,38 @@
       "bugFixes": {
         "title": "Bug Fixes",
         "desc": "Multiple bugs from the original TyperTools have been fixed for a more stable and reliable experience."
+      },
+      "multiBubbleMode": {
+        "title": "Multi-bubble Mode",
+        "desc": "Place and manage multiple bubbles at once."
+      },
+      "styleSubfolders": {
+        "title": "Style Subfolders",
+        "desc": "Create folders inside folders for better organization and deeper customization."
+      },
+      "centeringLogic": {
+        "title": "Improved Centering Logic",
+        "desc": "Refined centering calculations for more accurate placement."
+      },
+      "saveState": {
+        "title": "Save Current State",
+        "desc": "Save text, imported PSDs, and the selected line to typeset multiple series without losing progress (in settings)."
+      },
+      "customTextIncrement": {
+        "title": "Custom Text Size Increment",
+        "desc": "Numeric field to set the increment used by the increase/decrease text size buttons."
+      },
+      "cooldownRemoval": {
+        "title": "No 2s Cooldown",
+        "desc": "Actions like inserting text can now be done with no enforced delay."
+      },
+      "multiWordPrefixes": {
+        "title": "Multi-word Prefixes",
+        "desc": "Prefixes with multiple words (e.g., \"Big Title:\") are now supported."
+      },
+      "autoCenteringDetection": {
+        "title": "Automatic Shape Detection",
+        "desc": "Auto-centering works without manual selection by detecting the bubble shape, similar to Typesetterer."
       },
       "textSmoothing": {
         "title": "Improved Text Smoothing",
@@ -141,7 +173,7 @@
       "subtitle": "L'extension Photoshop ultime pour les lettreurs de mangas et de comics, conçue pour simplifier votre vie et augmenter votre productivité.",
       "ctaDownload": "Télécharger",
       "ctaFeatures": "Découvrir les fonctionnalités",
-      "versionNotice": "La version 2.3.0 est disponible !"
+      "versionNotice": "La version 2.4.0 est disponible !"
     },
     "installation": {
       "link": "Comment installer ?",
@@ -170,6 +202,38 @@
       "bugFixes": {
         "title": "Corrections de bugs",
         "desc": "Plusieurs bugs de TyperTools original ont été corrigés pour une expérience plus stable et fiable."
+      },
+      "multiBubbleMode": {
+        "title": "Mode multi-bulles",
+        "desc": "Permet de placer et gérer plusieurs bulles à la fois."
+      },
+      "styleSubfolders": {
+        "title": "Sous-dossiers de styles",
+        "desc": "Créez des dossiers dans des dossiers pour une meilleure organisation et une grande personnalisation."
+      },
+      "centeringLogic": {
+        "title": "Logique de centrage améliorée",
+        "desc": "Calculs de centrage affinés pour un positionnement plus précis."
+      },
+      "saveState": {
+        "title": "Sauvegarde de l'état actuel",
+        "desc": "Sauvegardez le texte, les PSD importés et la ligne sélectionnée pour typer plusieurs séries sans perdre la progression (dans les paramètres)."
+      },
+      "customTextIncrement": {
+        "title": "Incrément de taille personnalisée",
+        "desc": "Champ numérique pour définir l'incrément utilisé par les boutons d'augmentation/diminution de la taille du texte."
+      },
+      "cooldownRemoval": {
+        "title": "Suppression du cooldown de 2 s",
+        "desc": "Les actions comme l'insertion de texte peuvent désormais être faites sans délai imposé."
+      },
+      "multiWordPrefixes": {
+        "title": "Préfixes multi-mots",
+        "desc": "Les préfixes comportant plusieurs mots (ex. « Big Title: ») sont maintenant pris en charge."
+      },
+      "autoCenteringDetection": {
+        "title": "Détection automatique de forme",
+        "desc": "Le centrage auto fonctionne sans sélection manuelle grâce à la détection de la forme de la bulle, comme dans Typesetterer."
       },
       "textSmoothing": {
         "title": "Amélioration du lissage du texte",
@@ -277,7 +341,7 @@
       "subtitle": "La extensión definitiva de Photoshop para rotulistas de manga y cómics, diseñada para simplificar tu flujo de trabajo y mejorar tu productividad.",
       "ctaDownload": "Descargar",
       "ctaFeatures": "Descubrir características",
-      "versionNotice": "\u00a1La versi\u00f3n 2.3.0 ya est\u00e1 disponible!"
+      "versionNotice": "\u00a1La versi\u00f3n 2.4.0 ya est\u00e1 disponible!"
     },
     "installation": {
       "link": "¿Cómo instalar?",
@@ -306,6 +370,38 @@
       "bugFixes": {
         "title": "Corrección de errores",
         "desc": "Se han corregido múltiples errores de TyperTools original para una experiencia más estable y confiable."
+      },
+      "multiBubbleMode": {
+        "title": "Modo multiburbujas",
+        "desc": "Permite colocar y gestionar varias burbujas a la vez."
+      },
+      "styleSubfolders": {
+        "title": "Subcarpetas de estilos",
+        "desc": "Crea carpetas dentro de carpetas para mejor organización y mayor personalización."
+      },
+      "centeringLogic": {
+        "title": "Lógica de centrado mejorada",
+        "desc": "Cálculos de centrado afinados para un posicionamiento más preciso."
+      },
+      "saveState": {
+        "title": "Guardar estado actual",
+        "desc": "Guarda texto, PSD importados y la línea seleccionada para hacer varios typesets en varias series sin perder el progreso (en la configuración)."
+      },
+      "customTextIncrement": {
+        "title": "Incremento personalizado de tamaño de texto",
+        "desc": "Campo numérico para definir el incremento usado por los botones de aumentar/disminuir tamaño del texto."
+      },
+      "cooldownRemoval": {
+        "title": "Sin enfriamiento de 2 s",
+        "desc": "Acciones como insertar texto ahora se pueden realizar sin demora obligatoria."
+      },
+      "multiWordPrefixes": {
+        "title": "Prefijos de varias palabras",
+        "desc": "Ahora se admiten prefijos con varias palabras (p. ej., «Big Title:»)."
+      },
+      "autoCenteringDetection": {
+        "title": "Detección automática de forma",
+        "desc": "El centrado automático funciona sin selección manual detectando la forma de la burbuja, como en Typesetterer."
       },
       "textSmoothing": {
         "title": "Suavizado de texto mejorado",
