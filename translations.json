@@ -2,6 +2,8 @@
   "en": {
     "hero": {
       "title": "TypeR",
+      "headingTop": "The Ultimate Tool",
+      "headingBottom": "for Typesetters",
       "subtitle": "The ultimate Photoshop extension for manga and comics typesetters, designed to simplify your workflow and improve your productivity.",
       "ctaDownload": "Download",
       "ctaFeatures": "Discover Features",
@@ -170,6 +172,8 @@
   "fr": {
     "hero": {
       "title": "TypeR",
+      "headingTop": "L'outil ultime",
+      "headingBottom": "pour les lettreurs",
       "subtitle": "L'extension Photoshop ultime pour les lettreurs de mangas et de comics, conçue pour simplifier votre vie et augmenter votre productivité.",
       "ctaDownload": "Télécharger",
       "ctaFeatures": "Découvrir les fonctionnalités",
@@ -338,6 +342,8 @@
   "es": {
     "hero": {
       "title": "TypeR",
+      "headingTop": "La herramienta definitiva",
+      "headingBottom": "para rotulistas",
       "subtitle": "La extensión definitiva de Photoshop para rotulistas de manga y cómics, diseñada para simplificar tu flujo de trabajo y mejorar tu productividad.",
       "ctaDownload": "Descargar",
       "ctaFeatures": "Descubrir características",
