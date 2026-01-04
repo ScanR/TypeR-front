@@ -57,3 +57,54 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Copy to Clipboard Function for all code blocks
+function copyCode(button) {
+    // Find the code block in the parent container
+    const container = button.closest('.code-container');
+    const codeBlock = container.querySelector('.code-block, .terminal-code, pre');
+    
+    if (!codeBlock) return;
+    
+    // Get the text content (remove HTML tags)
+    const textToCopy = codeBlock.textContent || codeBlock.innerText;
+    
+    // Modern clipboard API
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            showCopySuccess(button);
+        }).catch(err => {
+            console.error('Failed to copy:', err);
+            fallbackCopy(textToCopy, button);
+        });
+    } else {
+        // Fallback for older browsers
+        fallbackCopy(textToCopy, button);
+    }
+}
+
+function fallbackCopy(text, button) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-999999px';
+    document.body.appendChild(textArea);
+    textArea.select();
+    
+    try {
+        document.execCommand('copy');
+        showCopySuccess(button);
+    } catch (err) {
+        console.error('Fallback copy failed:', err);
+    }
+    
+    document.body.removeChild(textArea);
+}
+
+function showCopySuccess(button) {
+    button.classList.add('copied');
+    
+    setTimeout(() => {
+        button.classList.remove('copied');
+    }, 2000);
+}

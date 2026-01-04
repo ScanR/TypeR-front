@@ -515,11 +515,20 @@ a {
     overflow-x: auto;
 }
 
+pre.code-block {
+    white-space: pre;
+    line-height: 1.8;
+}
+
 .code-block::before {
     content: '$';
     color: var(--secondary);
     margin-right: 10px;
     user-select: none;
+}
+
+pre.code-block::before {
+    content: none;
 }
 
 .step-list {
@@ -544,6 +553,118 @@ a {
     flex-shrink: 0;
     color: var(--primary);
     border: 1px solid var(--border);
+}
+
+/* Common Problems Section */
+.problems-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.problem-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    padding: 3rem;
+    backdrop-filter: blur(20px);
+    transition: all 0.5s var(--easing);
+}
+
+.problem-card:hover {
+    border-color: rgba(255, 200, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.problem-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background: linear-gradient(to right, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.problem-card p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.code-container {
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+.code-container .code-block {
+    margin: 0;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.3s var(--easing);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+
+.copy-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.copy-btn.copied {
+    background: rgba(16, 185, 129, 0.2);
+    border-color: #10b981;
+}
+
+.copy-btn.copied svg {
+    stroke: #10b981;
+}
+
+.copy-btn svg {
+    flex-shrink: 0;
+}
+
+.terminal-code {
+    background: #000;
+    padding: 2rem;
+    padding-top: 4rem;
+    border-radius: 12px;
+    font-family: 'Fira Code', monospace;
+    color: #a5b4fc;
+    border: 1px solid var(--border);
+    overflow-x: auto;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    white-space: pre;
+}
+
+.note-box {
+    padding: 1.5rem;
+    background: rgba(255, 200, 0, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 200, 0, 0.3);
+    margin-top: 2rem;
+}
+
+.note-box p {
+    margin: 0;
+    color: #fbbf24;
+    font-size: 1rem;
 }
 
 /* Footer */
@@ -577,6 +698,20 @@ footer a:hover {
     
     .install-container {
         padding: 1.5rem;
+    }
+    
+    .problem-card {
+        padding: 1.5rem;
+    }
+    
+    .copy-btn {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+    
+    .terminal-code {
+        padding: 1.5rem;
+        font-size: 0.85rem;
     }
     
     .nav-links {

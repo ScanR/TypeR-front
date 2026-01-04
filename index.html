@@ -46,6 +46,7 @@
                 <a href="#features" data-i18n="hero.ctaFeatures">Features</a>
                 <a href="#workflow" data-i18n="workflow.title">Workflow</a>
                 <a href="#download" data-i18n="installation.link">Download</a>
+                <a href="#problems" data-i18n="commonProblems.title">Common Problems</a>
             </div>
             <div class="nav-socials">
                 <a href="https://discord.com/invite/Pdmfmqk" target="_blank" class="social-icon" aria-label="Discord">
@@ -251,7 +252,16 @@
                             <div>
                                 <h4 data-i18n="installation.step1.title">Extract & Install</h4>
                                 <p data-i18n="installation.step1.macInstructions">Open terminal and run:</p>
-                                <div class="code-block">chmod +x install_mac.sh<br>./install_mac.sh</div>
+                                <div class="code-container">
+                                    <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                        </svg>
+                                    </button>
+                                    <pre class="code-block">chmod +x install_mac.sh
+./install_mac.sh</pre>
+                                </div>
                                 <div class="note"
                                     style="margin-top: 1rem; padding: 1rem; background: rgba(255,200,0,0.1); border-radius: 8px; border: 1px solid rgba(255,200,0,0.3);">
                                     <strong data-i18n="installation.note.title">Note for M1/M2:</strong>
@@ -267,6 +277,49 @@
                                 <p data-i18n="installation.step2.desc">Open Window > Extensions > TypeR</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Problems Section -->
+    <section id="problems" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 data-i18n="commonProblems.title">Common Problems</h2>
+                <p data-i18n="commonProblems.subtitle">Solutions to frequently encountered issues on macOS</p>
+            </div>
+
+            <div class="problems-container reveal">
+                <div class="problem-card">
+                    <h3 data-i18n="commonProblems.macSignature.title">Extension Not Properly Signed</h3>
+                    <p data-i18n="commonProblems.macSignature.description">
+                        If you see the error <strong>"The 'TypeR' extension could not be loaded because it was not properly signed"</strong> 
+                        or if TypeR appears <strong>grayed out</strong> (even after starting Photoshop with Rosetta), 
+                        run the following commands in your Terminal:
+                    </p>
+                    
+                    <div class="code-container">
+                        <button class="copy-btn" onclick="copyCode(this)" aria-label="Copy code">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                        <pre class="terminal-code">defaults write com.adobe.CSXS.9  PlayerDebugMode 1
+defaults write com.adobe.CSXS.10 PlayerDebugMode 1
+defaults write com.adobe.CSXS.11 PlayerDebugMode 1
+defaults write com.adobe.CSXS.12 PlayerDebugMode 1
+defaults write com.adobe.CSXS.13 PlayerDebugMode 1
+defaults write com.adobe.CSXS.14 PlayerDebugMode 1
+defaults write com.adobe.CSXS.15 PlayerDebugMode 1</pre>
+                    </div>
+
+                    <div class="note-box">
+                        <p data-i18n="commonProblems.macSignature.instructions">
+                            After running these commands, restart Photoshop and TypeR should work correctly.
+                        </p>
                     </div>
                 </div>
             </div>

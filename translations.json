@@ -163,6 +163,15 @@
         "desc": "With the ability to reduce the size of the TypeR window, you can organize your workspace optimally while keeping all tools within reach."
       }
     },
+    "commonProblems": {
+      "title": "Common Problems",
+      "subtitle": "Solutions to frequently encountered issues on macOS",
+      "macSignature": {
+        "title": "Extension Not Properly Signed",
+        "description": "If you see the error <strong>\"The 'TypeR' extension could not be loaded because it was not properly signed\"</strong> or if TypeR appears <strong>grayed out</strong> (even after starting Photoshop with Rosetta), run the following commands in your Terminal:",
+        "instructions": "After running these commands, restart Photoshop and TypeR should work correctly."
+      }
+    },
     "footer": {
       "text1": "TypeR - An advanced Photoshop extension for manga and comics typesetters",
       "original": "<a href=\"https://swirt.github.io/typertools/\">Original TyperTools</a> by Swirt",
@@ -333,6 +342,15 @@
         "desc": "TyperTools c'est trop gros, hein ? Eh bien avec TypeR, vous pouvez organiser votre espace de travail de manière optimale tout en gardant tous les outils à portée de main."
       }
     },
+    "commonProblems": {
+      "title": "Problèmes courants",
+      "subtitle": "Solutions aux problèmes fréquemment rencontrés sur macOS",
+      "macSignature": {
+        "title": "Extension non signée correctement",
+        "description": "Si vous voyez l'erreur <strong>« L'extension 'TypeR' n'a pas pu être chargée car elle n'est pas correctement signée »</strong> ou si TypeR apparaît <strong>grisé</strong> (même après avoir démarré Photoshop avec Rosetta), exécutez les commandes suivantes dans votre Terminal :",
+        "instructions": "Après avoir exécuté ces commandes, redémarrez Photoshop et TypeR devrait fonctionner correctement."
+      }
+    },
     "footer": {
       "text1": "TypeR – Une extension Photoshop avancée pour les typesetteurs de mangas et de comics",
       "original": "<a href=\"https://swirt.github.io/typertools/\">TyperTools original</a> par Swirt",
@@ -501,6 +519,15 @@
       "item6": {
         "title": "Interfaz compacta y eficiente",
         "desc": "Con la capacidad de reducir el tamaño de la ventana TypeR, puedes organizar tu espacio de trabajo de manera óptima mientras mantienes todas las herramientas a tu alcance."
+      }
+    },
+    "commonProblems": {
+      "title": "Problemas comunes",
+      "subtitle": "Soluciones a problemas frecuentes en macOS",
+      "macSignature": {
+        "title": "Extensión no firmada correctamente",
+        "description": "Si ves el error <strong>\"La extensión 'TypeR' no se pudo cargar porque no está firmada correctamente\"</strong> o si TypeR aparece <strong>atenuado</strong> (incluso después de iniciar Photoshop con Rosetta), ejecuta los siguientes comandos en tu Terminal:",
+        "instructions": "Después de ejecutar estos comandos, reinicia Photoshop y TypeR debería funcionar correctamente."
       }
     },
     "footer": {
